@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D735A2E2E1C0B6D00D1813E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D735A2D2E1C0B6800D1813E /* Package.swift */; };
-		1D735A2F2E1C0B6D00D1813E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D735A2D2E1C0B6800D1813E /* Package.swift */; };
-		1D735A302E1C0B6D00D1813E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D735A2D2E1C0B6800D1813E /* Package.swift */; };
 		2D42277F1BB4365C000C1A6C /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A12CCF145119B700C1D980 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D4227801BB43693000C1A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B208301450F597009315AF /* Foundation.framework */; };
 		2D4227831BB436B1000C1A6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A12CD3145122FC00C1D980 /* Security.framework */; };
@@ -191,7 +188,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D735A2D2E1C0B6800D1813E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		2D4227621BB4358C000C1A6C /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3345DC901C52ACD70083CCB8 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		454A02D41D0FAD010060DFB2 /* SRSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRSecurityPolicy.h; path = SocketRocket/include/SRSecurityPolicy.h; sourceTree = SOURCE_ROOT; };
@@ -647,7 +643,6 @@
 			isa = PBXGroup;
 			children = (
 				1D735A312E1C0C5B00D1813E /* include */,
-				1D735A2D2E1C0B6800D1813E /* Package.swift */,
 				81B31C0D1CDC404100D86D43 /* Internal */,
 				555E0EB11C51E56D00E6BB92 /* SocketRocket.h */,
 				454FEA831D25717C00073768 /* SRSecurityPolicy.m */,
@@ -925,7 +920,6 @@
 				8133640C1D091E1B0062E28D /* SRProxyConnect.m in Sources */,
 				817491AD1D1C8C33006E09DF /* SRMutex.m in Sources */,
 				81B31C641CDC444900D86D43 /* SRRunLoopThread.m in Sources */,
-				1D735A2F2E1C0B6D00D1813E /* Package.swift in Sources */,
 				81900A511D18C9CC0015A290 /* SRLog.m in Sources */,
 				81B31C321CDC406B00D86D43 /* SRHash.m in Sources */,
 				8179958B1CE139700084DA37 /* SRDelegateController.m in Sources */,
@@ -952,7 +946,6 @@
 				8133640F1D091E1C0062E28D /* SRProxyConnect.m in Sources */,
 				817491AF1D1C8C33006E09DF /* SRMutex.m in Sources */,
 				81B31C661CDC444900D86D43 /* SRRunLoopThread.m in Sources */,
-				1D735A302E1C0B6D00D1813E /* Package.swift in Sources */,
 				81900A531D18C9CC0015A290 /* SRLog.m in Sources */,
 				81B31C341CDC406B00D86D43 /* SRHash.m in Sources */,
 				8179958D1CE139700084DA37 /* SRDelegateController.m in Sources */,
@@ -990,7 +983,6 @@
 				8133640E1D091E1B0062E28D /* SRProxyConnect.m in Sources */,
 				817491AE1D1C8C33006E09DF /* SRMutex.m in Sources */,
 				81B31C651CDC444900D86D43 /* SRRunLoopThread.m in Sources */,
-				1D735A2E2E1C0B6D00D1813E /* Package.swift in Sources */,
 				81900A521D18C9CC0015A290 /* SRLog.m in Sources */,
 				81B31C331CDC406B00D86D43 /* SRHash.m in Sources */,
 				8179958C1CE139700084DA37 /* SRDelegateController.m in Sources */,

@@ -1,10 +1,3 @@
-//
-//  Package.swift
-//  SocketRocket
-//
-//  Created by Григорий Стеценко on 07.07.2025.
-//
-
 // swift-tools-version:5.3
 import PackageDescription
 
