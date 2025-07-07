@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D735A2E2E1C0B6D00D1813E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D735A2D2E1C0B6800D1813E /* Package.swift */; };
+		1D735A2F2E1C0B6D00D1813E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D735A2D2E1C0B6800D1813E /* Package.swift */; };
+		1D735A302E1C0B6D00D1813E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D735A2D2E1C0B6800D1813E /* Package.swift */; };
 		2D42277F1BB4365C000C1A6C /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A12CCF145119B700C1D980 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D4227801BB43693000C1A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B208301450F597009315AF /* Foundation.framework */; };
 		2D4227831BB436B1000C1A6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A12CD3145122FC00C1D980 /* Security.framework */; };
@@ -188,9 +191,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D735A2D2E1C0B6800D1813E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		2D4227621BB4358C000C1A6C /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3345DC901C52ACD70083CCB8 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		454A02D41D0FAD010060DFB2 /* SRSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRSecurityPolicy.h; path = SocketRocket/SRSecurityPolicy.h; sourceTree = SOURCE_ROOT; };
+		454A02D41D0FAD010060DFB2 /* SRSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRSecurityPolicy.h; path = SocketRocket/include/SRSecurityPolicy.h; sourceTree = SOURCE_ROOT; };
 		454FEA791D2570D400073768 /* SRPinningSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPinningSecurityPolicy.h; sourceTree = "<group>"; };
 		454FEA7A1D2570D400073768 /* SRPinningSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPinningSecurityPolicy.m; sourceTree = "<group>"; };
 		454FEA831D25717C00073768 /* SRSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSecurityPolicy.m; sourceTree = "<group>"; };
@@ -344,6 +348,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D735A312E1C0C5B00D1813E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				81CD05FB1CEEC65D00497F47 /* NSRunLoop+SRWebSocket.h */,
+				81CD05D51CEEC47300497F47 /* NSURLRequest+SRWebSocket.h */,
+				454A02D41D0FAD010060DFB2 /* SRSecurityPolicy.h */,
+				F6A12CCF145119B700C1D980 /* SRWebSocket.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		4861E7721D022211002FAB1D /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,16 +646,14 @@
 		F6B208321450F597009315AF /* SocketRocket */ = {
 			isa = PBXGroup;
 			children = (
+				1D735A312E1C0C5B00D1813E /* include */,
+				1D735A2D2E1C0B6800D1813E /* Package.swift */,
 				81B31C0D1CDC404100D86D43 /* Internal */,
 				555E0EB11C51E56D00E6BB92 /* SocketRocket.h */,
-				454A02D41D0FAD010060DFB2 /* SRSecurityPolicy.h */,
 				454FEA831D25717C00073768 /* SRSecurityPolicy.m */,
-				F6A12CCF145119B700C1D980 /* SRWebSocket.h */,
 				F6A12CD0145119B700C1D980 /* SRWebSocket.m */,
-				81CD05D51CEEC47300497F47 /* NSURLRequest+SRWebSocket.h */,
 				8117C4221D3076DF00784D79 /* NSURLRequest+SRWebSocketPrivate.h */,
 				81CD05D61CEEC47300497F47 /* NSURLRequest+SRWebSocket.m */,
-				81CD05FB1CEEC65D00497F47 /* NSRunLoop+SRWebSocket.h */,
 				8117C42F1D30779900784D79 /* NSRunLoop+SRWebSocketPrivate.h */,
 				81CD05FC1CEEC65D00497F47 /* NSRunLoop+SRWebSocket.m */,
 				811934B01CDAF711003AB243 /* Resources */,
@@ -836,6 +849,17 @@
 			attributes = {
 				LastTestingUpgradeCheck = 0640;
 				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					2D4227611BB4358C000C1A6C = {
+						LastSwiftMigration = 1640;
+					};
+					3345DC821C52ACD70083CCB8 = {
+						LastSwiftMigration = 1640;
+					};
+					F668C87F153E91210044DBAC = {
+						LastSwiftMigration = 1640;
+					};
+				};
 			};
 			buildConfigurationList = F6B208271450F597009315AF /* Build configuration list for PBXProject "SocketRocket" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -901,6 +925,7 @@
 				8133640C1D091E1B0062E28D /* SRProxyConnect.m in Sources */,
 				817491AD1D1C8C33006E09DF /* SRMutex.m in Sources */,
 				81B31C641CDC444900D86D43 /* SRRunLoopThread.m in Sources */,
+				1D735A2F2E1C0B6D00D1813E /* Package.swift in Sources */,
 				81900A511D18C9CC0015A290 /* SRLog.m in Sources */,
 				81B31C321CDC406B00D86D43 /* SRHash.m in Sources */,
 				8179958B1CE139700084DA37 /* SRDelegateController.m in Sources */,
@@ -927,6 +952,7 @@
 				8133640F1D091E1C0062E28D /* SRProxyConnect.m in Sources */,
 				817491AF1D1C8C33006E09DF /* SRMutex.m in Sources */,
 				81B31C661CDC444900D86D43 /* SRRunLoopThread.m in Sources */,
+				1D735A302E1C0B6D00D1813E /* Package.swift in Sources */,
 				81900A531D18C9CC0015A290 /* SRLog.m in Sources */,
 				81B31C341CDC406B00D86D43 /* SRHash.m in Sources */,
 				8179958D1CE139700084DA37 /* SRDelegateController.m in Sources */,
@@ -964,6 +990,7 @@
 				8133640E1D091E1B0062E28D /* SRProxyConnect.m in Sources */,
 				817491AE1D1C8C33006E09DF /* SRMutex.m in Sources */,
 				81B31C651CDC444900D86D43 /* SRRunLoopThread.m in Sources */,
+				1D735A2E2E1C0B6D00D1813E /* Package.swift in Sources */,
 				81900A521D18C9CC0015A290 /* SRLog.m in Sources */,
 				81B31C331CDC406B00D86D43 /* SRHash.m in Sources */,
 				8179958C1CE139700084DA37 /* SRDelegateController.m in Sources */,
@@ -1015,7 +1042,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D647591D2CA6A100690609 /* SocketRocket-iOS-Dynamic.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -1023,7 +1054,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D647591D2CA6A100690609 /* SocketRocket-iOS-Dynamic.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -1031,7 +1065,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D6475C1D2CA6A100690609 /* SocketRocket-tvOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -1040,7 +1078,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D6475C1D2CA6A100690609 /* SocketRocket-tvOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -1063,7 +1104,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D6475B1D2CA6A100690609 /* SocketRocket-macOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -1071,7 +1116,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D6475B1D2CA6A100690609 /* SocketRocket-macOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
